@@ -8,7 +8,7 @@ export function Wrapper(props) {
    const handleClick= () =>{
     setIsVisible(!isVisible);
    }
-   
+
    return(
     <div className='global-wrapper'>       
             <div className='descritpion-title_chevron'>
@@ -23,3 +23,4 @@ export function Wrapper(props) {
     </div>
     );
 }
+/** */
