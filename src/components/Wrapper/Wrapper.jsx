@@ -23,4 +23,3 @@ export function Wrapper(props) {
     </div>
     );
 }
-/** */
