@@ -1,0 +1,26 @@
+.Gallery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px ;
+    padding:50px;
+    background-color: #F7F7F7 ;
+
+    border-radius: 25px;
+    min-height: 400px;
+    margin: 3rem 8rem;
+}
+
+@media screen and (width <= 768px) {
+    .Gallery{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .Gallery{
+        border: 1px solid red;
+    }
+}
+
