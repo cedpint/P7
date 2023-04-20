@@ -35,3 +35,32 @@
 .navbar a:hover{
    transform: scale(1.1);
 }
+
+@media only screen and (max-width: 1092px ) {
+        .navbar_elements{
+            justify-content: space-between;
+           width: 35%;
+        
+        }
+}
+
+@media screen and (width <= 769px ) {
+    .navbar{
+        padding-inline: 2rem;
+    }
+    
+    .navbar_logo{
+        height: 47px;
+        width: 145px;
+    }
+
+    .navbar_elements{
+        width: auto;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: right;
+    }
+
+}
