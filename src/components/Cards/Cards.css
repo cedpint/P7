@@ -1,14 +1,11 @@
 .cards{
     display:flex ;
     flex-direction: column;
-    
-    
-   
     background-image: linear-gradient(to top, #ff6060, #3f3d3d );
     height: 400px;
     width: 400px;
     border-radius: 10px;
-padding-bottom: 0px;
+    padding-bottom: 0px;
     min-width: 200px;
     min-height: 200px;
    
@@ -34,6 +31,7 @@ padding-bottom: 0px;
 }
 
 .title_card{
+    display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -44,4 +42,22 @@ padding-bottom: 0px;
 
 a{
     text-decoration: none;
+}
+
+@media screen and (width <= 769px ){
+    .cards {
+        width: 100%;
+        height: 255px;
+    }
+
+    .title_card{
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+       
+        
+        
+        
+    }
+
 }

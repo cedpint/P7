@@ -46,7 +46,8 @@
 
 @media screen and (width <= 769px ) {
     .navbar{
-        padding-inline: 2rem;
+        margin-top: 15px;
+        padding-inline: 5px;
     }
     
     .navbar_logo{
@@ -61,6 +62,6 @@
         line-height: 17px;
         letter-spacing: 0em;
         text-align: right;
-    }
+        text-transform: uppercase;    }
 
 }
