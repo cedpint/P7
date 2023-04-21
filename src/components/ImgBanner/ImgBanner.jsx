@@ -2,9 +2,15 @@ import React from 'react';
 import  "./ImgBanner.css";
 
 export function ImgBanner(props) {
-   return(
+
+    const pictures = props.pictures;
+
+   return (
+    /*map for iteration on pictures and retun all of them/flat  */
     <div className='img-banner'>
-	    <img src={props.imageUrl} alt='Appartement Kasa'/>
+	   { pictures.map((pic) => (
+       <img key={pic} src={pic} alt=''></img>
+       ))} 
     </div>
 );
 }

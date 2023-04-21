@@ -32,11 +32,13 @@ import { useLocation } from "react-router-dom";
 	return (
 		<> 
 			<Navbar />
-			<ImgBanner imageUrl={flat.cover} />
-			<ApartmentHeader flat={flat}/>
-			<div className='wrapper-description-global'>
-				<Wrapper title="Description" content={flat.description}/>
-				<Wrapper title="Equipement" content={flat.equipments}/>
+			<div className='apartment-card'>
+				<ImgBanner pictures={flat.pictures} />
+				<ApartmentHeader flat={flat}/>
+				<div className='wrapper-description-global'>
+					<Wrapper title="Description" content={flat.description}/>
+					<Wrapper title="Equipement" content={flat.equipments}/>
+				</div>
 			</div>
 			<Footer />
 		</>
