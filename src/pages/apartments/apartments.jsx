@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './apartments.css';
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
-import {ImgBanner} from '../../components/ImgBanner/ImgBanner.jsx'
+import {Carrousel} from '../../components/Carrousel/Carrousel.jsx'
 import {ApartmentHeader} from '../../components/ApartmentHeader/ApartmentHeader.jsx'
 import {Wrapper} from '../../components/Wrapper/Wrapper.jsx'
 import { useLocation } from "react-router-dom";
@@ -33,7 +33,7 @@ import { useLocation } from "react-router-dom";
 		<> 
 			<Navbar />
 			<div className='apartment-card'>
-				<ImgBanner pictures={flat.pictures} />
+				<Carrousel pictures={flat.pictures} />
 				<ApartmentHeader flat={flat}/>
 				<div className='wrapper-description-global'>
 					<Wrapper title="Description" content={flat.description}/>

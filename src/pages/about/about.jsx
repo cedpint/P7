@@ -1,9 +1,10 @@
 import React from 'react';
 import './about.css';
 import Navbar from '../../components/Navbar/Navbar.jsx';
+import {Banner} from '../../components/Banner/Banner';
 import Footer from '../../components/Footer/Footer.jsx';
 import {Wrapper} from '../../components/Wrapper/Wrapper';
-import {Banner} from '../../components/Banner/Banner.jsx';
+
 
 function About() {
 	return (
@@ -15,7 +16,7 @@ function About() {
 			<Wrapper />
 			<Wrapper />
 			<Wrapper />
-			</div>
+		</div>
 		<Footer/>
 		</>
 	);
