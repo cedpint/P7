@@ -3,22 +3,39 @@ import './about.css';
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import {Banner} from '../../components/Banner/Banner';
 import Footer from '../../components/Footer/Footer.jsx';
-import {Wrapper} from '../../components/Wrapper/Wrapper';
+import {Collapse} from '../../components/Collapse/Collapse';
+import aboutData from "../../assets/aboutData";
 
-
-function About() {
+	const About = () => {
+		// Switch to display content in the dropdown by title
+		const content = (title) => {
+		  switch (title) {
+			case "fiability":
+			  return aboutData.fiability;
+			case "respect":
+			  return aboutData.respect;
+			case "service":
+			  return aboutData.service;
+			case "sécurity":
+			  return aboutData.security;
+			default:
+			  console.log("default");
+			  break;
+		  }
+		};
+	  
 	return (
 		<>
 		<Navbar />
 		<Banner  />
 		<div className='about_global'>
-			<Wrapper />
-			<Wrapper />
-			<Wrapper />
-			<Wrapper />
+			<Collapse title="Fiabilité" content={content("fiability")}/>
+			<Collapse title="Respect" content={content("respect")}/>
+			<Collapse title="Service"content={content("service")}/>
+			<Collapse title="Sécurité"content={content("security")}/>
 		</div>
 		<Footer/>
 		</>
 	);
-}
+};
 export default About;

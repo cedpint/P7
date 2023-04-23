@@ -1,0 +1,24 @@
+import React, { useState } from 'react';
+import  "./Collapse.css";
+
+export function Collapse (props) {
+
+    const [isContenVisible, setisContenVisible] = useState(false);
+
+    const showContent = () =>{
+        setisContenVisible(!isContenVisible);
+
+    }
+
+   return(
+    <div className='global-collapse'>       
+        <p className='collapse-header'>
+        <span>{props.title}</span>
+        <i className='fas fa-chevron-up' onClick={showContent}></i>
+        </p>
+
+        {isContenVisible && <p className='collapse-content'>{props.content}</p>}
+        </div>
+    );
+}    
+export default Collapse;

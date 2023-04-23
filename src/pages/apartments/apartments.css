@@ -10,11 +10,12 @@
    
 }
 
-.wrapper-description-global{
+.collapse-description-global{
     justify-content: center;
-    flex-basis: 50%;
     display: flex;
-    gap: 30px;
+    gap: 150px;
 }
+
+
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 import "./Banner.css";
 import imgBanner from './../../assets/banner.png'
 
-export function Banner() {
+export function Banner(props) {
   return(
     <div className="banner">
         <img src={imgBanner} alt="Baniere Kasa"/>

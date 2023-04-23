@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar/Navbar.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import {Carrousel} from '../../components/Carrousel/Carrousel.jsx'
 import {ApartmentHeader} from '../../components/ApartmentHeader/ApartmentHeader.jsx'
-import {Wrapper} from '../../components/Wrapper/Wrapper.jsx'
+import {Collapse} from '../../components/Collapse/Collapse.jsx'
 import { useLocation } from "react-router-dom";
 
 
@@ -35,9 +35,9 @@ import { useLocation } from "react-router-dom";
 			<div className='apartment-card'>
 				<Carrousel pictures={flat.pictures} />
 				<ApartmentHeader flat={flat}/>
-				<div className='wrapper-description-global'>
-					<Wrapper title="Description" content={flat.description}/>
-					<Wrapper title="Equipement" content={flat.equipments}/>
+				<div className='collapse-description-global'>
+					<Collapse title="Description" content={flat.description}/>
+					<Collapse title="Equipements" content={flat.equipments}/>
 				</div>
 			</div>
 			<Footer />

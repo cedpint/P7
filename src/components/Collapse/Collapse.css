@@ -1,0 +1,51 @@
+.global-collapse{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color:#ff6060 ;
+}
+
+.collapse-header{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    padding-inline: 15px;
+    background-color: #ff6060;
+    border-radius: 10px;
+}
+
+.collapse-header span, .collapse-header i{
+    font-size:20px;
+    color: white;
+}
+
+.collapse-header i{
+    cursor: pointer;
+}
+
+.collapse-content{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: #F7F7F7;
+        border-radius: 10px;
+        margin: 0;
+        height: 250px;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 50px 25px;
+        position: relative;
+        top: -10px;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+    }
+
+ .collapse-content{
+    display: flex;
+    flex-direction: column;
+ }   
+
