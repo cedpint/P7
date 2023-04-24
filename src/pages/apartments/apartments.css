@@ -16,6 +16,18 @@
     gap: 150px;
 }
 
+@media screen and (width <= 769px ){
 
+    .navbar{
+        padding-inline: 1rem;
+    }
+    .apartment-card{
+        padding-inline: 1rem;
+        margin-top: 1rem;
+        flex-wrap: nowrap;
+    }
+
+    
+}
 
 

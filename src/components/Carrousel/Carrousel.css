@@ -69,7 +69,21 @@
     text-align: center;
     color: white;
     font-size: 18px;
-    padding: 0.5rem 1rem;
+}
 
+@media screen and (width <= 769px ){
+   .image_container{
+    max-height: 255px;
+   }
+
+   .img-banner{
+    margin-bottom: 10px;
+}
+   .btn-previous, .btn-next {
+    font-size: 25px;
+   }
+   .slide-counter{
+    display: none;
+   }
 }
 
