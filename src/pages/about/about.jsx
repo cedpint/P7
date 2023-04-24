@@ -2,6 +2,7 @@ import React from 'react';
 import './about.css';
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import {Banner} from '../../components/Banner/Banner';
+import imgBannerAbout from './../../assets/aboutbanner.png'
 import Footer from '../../components/Footer/Footer.jsx';
 import {Collapse} from '../../components/Collapse/Collapse';
 import aboutData from "../../assets/aboutData";
@@ -27,7 +28,7 @@ import aboutData from "../../assets/aboutData";
 	return (
 		<>
 		<Navbar />
-		<Banner  />
+		<Banner image={imgBannerAbout} titre="" />
 		<div className='about_global'>
 			<Collapse title="Fiabilité" content={content("fiability")}/>
 			<Collapse title="Respect" content={content("respect")}/>
