@@ -17,7 +17,7 @@ export function Collapse (props) {
         <i className='fas fa-chevron-up' onClick={showContent}></i>
         </p>
 
-        {isContenVisible && <p className='collapse-content'>{props.content}</p>}
+        {isContenVisible && <p className='collapse-content'>{Array.isArray(props.content)?props.content.map((el) => {return <p>{el}</p>}):props.content}</p>}
         </div>
     );
 }    

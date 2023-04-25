@@ -4,6 +4,10 @@
     flex-wrap: wrap;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    padding-inline: 1rem;
+    
 }
-
+@media screen and (width <= 769px ){
+    .home{
+        padding-inline: 1rem;
+    }
+}

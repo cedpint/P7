@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-inline: 8rem;
+    margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
     color:#ff6060 ;
    
@@ -18,9 +19,6 @@
 
 @media screen and (width <= 769px ){
 
-    .navbar{
-        padding-inline: 1rem;
-    }
     .apartment-card{
         padding-inline: 1rem;
         margin-top: 1rem;

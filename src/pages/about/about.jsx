@@ -28,8 +28,8 @@ import aboutData from "../../assets/aboutData";
 	return (
 		<>
 		<Navbar />
-		<Banner image={imgBannerAbout} titre="" />
 		<div className='about_global'>
+		<Banner image={imgBannerAbout} titre="" />
 			<Collapse title="Fiabilité" content={content("fiability")}/>
 			<Collapse title="Respect" content={content("respect")}/>
 			<Collapse title="Service"content={content("service")}/>

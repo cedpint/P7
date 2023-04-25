@@ -3,6 +3,18 @@
     flex-direction: column;
     align-items:  center;
     padding-inline: 15rem;
+}
 
- 
+@media screen and (width <= 769px ){
+    .about_global{
+        padding-inline: 1rem;
+    }
+    .about_global img{
+        height: 223px;
+width: 336px;
+left: 20px;
+top: 84px;
+border-radius: 10px;
+
+    }
 }

@@ -15,8 +15,8 @@ import { useLocation } from "react-router-dom";
 	
 	const [flat, setFlat] = useState (null);
 	/*useEffect = component loading */
-	/*2 parameters (Fonction + [] dependencies array when is empty = loading just one time)*/
-	useEffect(fetchApartmentData);
+	/* parameters (Fonction + [] dependencies array when is empty = loading just one time)*/
+	useEffect(fetchApartmentData,[]);
 	/*Id find and retriev selected apartment by unique Id using "FIND" */
 	function fetchApartmentData() {
 		fetch("database.json")

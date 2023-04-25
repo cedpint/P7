@@ -7,11 +7,13 @@ import Footer from '../../components/Footer/Footer'
 
 export default function Home() {
 	return (
-		<div className='home'>
+			<>
 			<Navbar />
-			<HomeBanner image={imgBanner} texte="Chez vous, partout et ailleurs" />
-			<Gallery />
-			<Footer />
-		</div>
+			<div className='home'>
+				<HomeBanner image={imgBanner} texte="Chez vous, partout et ailleurs" />
+				<Gallery />
+				<Footer />
+			</div>
+			</>
 	)
 }
