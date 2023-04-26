@@ -12,8 +12,7 @@ export function ApartmentHeader(props) {
 				<div className='apartment-title'>
 					<h1>{flat.title}</h1>
 					<h2>{flat.location}</h2>
-					<div className='apartments-filters'>
-						{/*for each tag retrive a span with tag indside span*/}
+					<div className='apartments-filters'>						
 						{flat.tags.map((tag) =>(
 						<span key={tag}>{tag}</span>
 						))}

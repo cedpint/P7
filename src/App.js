@@ -8,15 +8,15 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <Home />
+		element: <Home />, errorElement: <NotFound />
 	},
 	{
 		path: "/apartments",
-		element: <Apartments />
+		element: <Apartments />, errorElement: <NotFound />
 	},
 	{
 		path: '/about',
-		element: <About />
+		element: <About />, errorElement: <NotFound />
 	},
 	{
 		path: "*",

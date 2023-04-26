@@ -9,7 +9,8 @@ export function Carrousel(props) {
 
    const [currentPicture, setCurrentPicture] = useState (0);
 
-   /*if i= currentpicture (0) --> if the currentpicture is the first on the array ='show'*/ 
+   /*if i= currentpicture (0) --> if the currentpicture is the first on the array ='show= opacity =1' 
+   if the pucture don't have the 'show' opacity=0*/ 
    const getClassName = (i) =>{
     if (i === currentPicture) return "show";
     return "";

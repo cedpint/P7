@@ -15,7 +15,9 @@ export default function NotFound() {
 			</div>
 				<Link className='notFound_infos_return' to='/'>Retourner sur la page d'accueil</Link>
 		</div>
+		<div className='notFoundFooter'>
 		<Footer />
+		</div>
 		</>
 	)
 }

@@ -25,6 +25,40 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
-   
     color: #FF6060;
+}
+
+@media screen and (width <= 769px){
+
+    .notFound{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        
+    }
+    .notFound_infos h1 {
+        margin-top: 50px;
+        font-size: 96px;
+        margin-bottom: 0;
+    }
+
+    .notFound_infos p{
+        display: flex;
+        margin-left: 75px;
+        width: 60%;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .notFound_infos_return{
+        font-size: 10px;
+        text-decoration: underline;
+    }
+
+    .notFoundFooter{
+        margin-top: 120px;
+    }
+ 
 }

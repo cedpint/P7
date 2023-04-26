@@ -14,10 +14,11 @@ export function Collapse (props) {
     <div className='global-collapse'>       
         <p className='collapse-header'>
         <span>{props.title}</span>
-        <i className='fas fa-chevron-up' onClick={showContent}></i>
+        <i className={isContenVisible?'fas fa-chevron-down':'fas fa-chevron-up'} onClick={showContent}></i>
         </p>
 
-        {isContenVisible && <p className='collapse-content'>{Array.isArray(props.content)?props.content.map((el) => {return <p>{el}</p>}):props.content}</p>}
+        {isContenVisible && <div className='collapse-content'>{Array.isArray(props.content)?props.content.map((el) => 
+        {return <p key={el.toString()}>{el}</p>}):props.content}</div>}
         </div>
     );
 }    
